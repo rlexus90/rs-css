@@ -1,0 +1,248 @@
+aside {
+
+
+
+	nav {
+		padding-bottom: 10px;
+		font-size: 28px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid #777;
+
+		.level-content {
+
+			.level-text {
+				padding-right: 10px;
+			}
+
+			.level-check.done {
+				color: #0b730b;
+			}
+		}
+
+		.nav-buttons {
+			display: flex;
+
+			.prew-level {
+				padding-left: 15px;
+				margin-right: -5px;
+
+				div {
+					width: 18px;
+					height: 18px;
+					border-top: 2px solid #777;
+					border-left: 2px solid #777;
+					transform: rotate(-45deg) translateX(-8px);
+				}
+
+			}
+
+			.prew-level:hover {
+				cursor: pointer;
+				transform: scale(1.3);
+
+			}
+
+			.next-level {
+				padding-right: 15px;
+				margin-left: -5px;
+
+				div {
+					width: 18px;
+					height: 18px;
+					border-top: 2px solid #777;
+					border-right: 2px solid #777;
+					transform: rotate(+45deg) translateX(8px);
+				}
+			}
+
+			.next-level:hover {
+				cursor: pointer;
+				transform: scale(1.3);
+
+			}
+
+			.menu {
+				cursor: pointer;
+				position: relative;
+				margin: 0 10px 0 10px;
+				width: 30px;
+				height: 30px;
+
+				span {
+					position: absolute;
+					top: 15px;
+					display: block;
+					width: 30px;
+					height: 2px;
+					background-color: #777;
+				}
+
+				span:nth-child(1) {
+					position: absolute;
+					top: 5px;
+					display: block;
+					width: 30px;
+					height: 2px;
+					background-color: #777;
+					transition: transform 0.3s;
+				}
+
+				span:nth-child(3) {
+					position: absolute;
+					top: 25px;
+					display: block;
+					width: 30px;
+					height: 2px;
+					background-color: #777;
+					transition: transform 0.3s;
+				}
+
+			}
+
+			.menu.open {
+				position: relative;
+				margin: 0 20px 0 0px;
+				width: 30px;
+				height: 30px;
+
+				span {
+					display: none;
+				}
+
+				span:nth-child(1) {
+					display: block;
+					transform: rotate(45deg) translate(15px, 0px);
+					transition: transform 0.3s;
+				}
+
+				span:nth-child(3) {
+					display: block;
+					transform: rotate(-45deg) translate(14px, 1px);
+					transition: transform 0.3s;
+				}
+
+
+			}
+
+			.menu:hover {
+				transform: scale(1.2);
+			}
+
+		}
+	}
+
+	.level {
+		position: relative;
+		padding: 20px 0 0 0;
+		z-index: 5;
+
+		&__title {
+			font-size: 25px;
+			padding-bottom: 10px;
+			font-weight: 800;
+			color: #9d9b9b;
+		}
+
+		&__task {
+			font-size: 18px;
+		}
+
+		&__syntax {
+			margin: 10px 0;
+			padding: 5px;
+			background-color: #2e2a2391;
+			width: fit-content;
+			font-size: 30px;
+		}
+
+		&__textContent {
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		&__examples {
+			padding: 30px 0 0 0;
+			color: #9d9b9b;
+			font-size: 16px;
+
+			p {
+				padding: 10px 0;
+				color: #777;
+				line-height: 150%;
+			}
+		}
+
+		.level-span {
+			line-height: 110%;
+			display: inline-block;
+			background-color: #2e2a2391;
+			color: #a7a5a5;
+		}
+
+		.levelList {
+			position: absolute;
+			opacity: 1;
+			width: 100%;
+			height: max-content;
+			z-index: 10;
+			font-size: 24px;
+			line-height: 170%;
+			top: 0;
+			background-color: #181511;
+			transition: all 0.5s;
+
+			.choseLevel {
+				font-size: 16px;
+				transition: all 0.5s;
+				width: 100%;
+
+				div:hover {
+					cursor: pointer;
+					color: #b2b1b1;
+					transition: all 0.5s;
+				}
+
+				div {
+					transition: all 0.5s;
+				}
+			}
+
+
+			.level-check.done {
+				color: #0b730b;
+			}
+
+			.levelList-reset {
+				margin: 20px auto;
+				min-width: 150px;
+				width: 70%;
+				font-size: 16px;
+				border: 3px solid;
+				border-radius: 15px;
+				text-align: center;
+				transition: all 0.5s;
+			}
+
+			.levelList-reset:hover {
+				cursor: pointer;
+				color: #b2b1b1;
+				transition: all 0.5s;
+			}
+
+		}
+
+		.levelList.hiden {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			height: 100%;
+			z-index: 1;
+			background-color: #181511;
+			transition: all 0.5s;
+
+		}
+
+	}
+}

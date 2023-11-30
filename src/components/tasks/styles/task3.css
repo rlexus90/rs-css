@@ -1,0 +1,15 @@
+.on-table .hovered {
+  max-width: 200px;
+}
+.on-table div {
+  position: relative;
+  align-self: flex-end;
+  padding: 0 10px;
+}
+.on-table img {
+  width: 100%;
+}
+.on-table .id2 {
+  max-width: 190px;
+  margin-bottom: -5px;
+}

@@ -1,0 +1,35 @@
+.on-table {
+	.hovered {
+		max-width: 200px;
+	}
+
+	div {
+		position: relative;
+		align-self: flex-end;
+		padding: 0 10px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.id1 {
+		max-width: 190px;
+	
+	}
+
+
+	.id3 {
+		position: absolute;
+		width: 100px;
+		left: 24px;
+		bottom: 3px;
+		z-index: 10;
+	}
+
+	.id4 {
+		margin-bottom: 2px;
+		width: 95px;
+	}
+
+}
