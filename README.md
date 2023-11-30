@@ -1,5 +1,7 @@
 # rs-css
 
+[deploy](https://rlexus90.github.io/rs-css/)
+
 Для запускка приложения необходимо в терминале ввести команду "npm start " \
 Для запуска билда приложения - команда "npm run build "
 
